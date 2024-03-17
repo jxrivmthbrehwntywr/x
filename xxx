@@ -1016,7 +1016,8 @@ local function synsaveinstance(CustomOptions)
 		total ..= savestr
 		writefile(placename, total)
 		if StatusTextClone then
-			StatusTextClone.Text = "Saving " .. getsizeformat()
+			StatusTextClone.Text = "Saving File: " .. getsizeformat()
+			StatusTextClone.TextColor3 = Color3.fromRGB(51, 255, 155)
 		end
 		savebuffer = {}
 		rwait()
